@@ -1,0 +1,84 @@
+*** Message Type: info ***
+When: Tue Nov 05 10:34:29 PM -03 2024
+SimVision started.
+Version: TOOL:  simvision       23.03-s005
+User: bit
+Host: cdsbox
+Platform: Linux/x86_64/3.10.0-1160.119.1.el7.x86_64
+Started: Tue Nov 05 10:34:29 PM -03 2024
+Command: /opt/cadence/XCELIUM2303/tools.lnx86/simvision/bin/simvision.exe -connect dc:cdsbox:56984 -nocopyright
+Work Directory: /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab15-memcov
+ 
+*** Message Type: info ***
+When: Tue Nov 05 10:34:30 PM -03 2024
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Nov 05 10:34:31 PM -03 2024
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Tue Nov 05 10:34:32 PM -03 2024
+Connect to Simulator
+      Design: worklib.top:sv
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL:     xmsim   23.03-s005
+        User: bit
+        Host: cdsbox
+Time Started: Tue Nov 05 10:34:28 PM -03 2024
+  Process ID: 12091
+   Directory: /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab15-memcov
+     Command: xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc
+
+ 
+*** Message Type: info ***
+When: Tue Nov 05 10:34:32 PM -03 2024
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Tue Nov 05 10:36:15 PM -03 2024
+Exit XM-Sim: user
+      Design: worklib.top:sv
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL:     xmsim   23.03-s005
+        User: bit
+        Host: cdsbox
+Time Started: Tue Nov 05 10:34:28 PM -03 2024
+  Process ID: 12091
+   Directory: /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab15-memcov
+     Command: xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc
+
+ 
+*** Message Type: error ***
+When: Tue Nov 05 10:36:15 PM -03 2024
+XM-Sim Crashed:
+      Design: worklib.top:sv
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL:     xmsim   23.03-s005
+        User: bit
+        Host: cdsbox
+Time Started: Tue Nov 05 10:34:28 PM -03 2024
+  Process ID: 12091
+   Directory: /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab15-memcov
+     Command: xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc
+      Design: worklib.top:sv
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL:       xmsim   23.03-s005
+        User: bit
+        Host: cdsbox
+Time Started: Tue Nov 05 10:34:28 PM -03 2024
+  Process ID: 12091
+   Directory: /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab15-memcov
+     Command: xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: Tue Nov 05 10:36:19 PM -03 2024
+SimVision Exit.
+ 

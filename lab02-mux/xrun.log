@@ -1,0 +1,49 @@
+xrun: 23.03-s005: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.03-s005: Started on Sep 23, 2024 at 21:41:26 -03
+xrun
+	scale_mux.sv
+	scale_mux_test.sv
+Recompiling... reason: file './scale_mux.sv' is newer than expected.
+	expected: Mon Sep 23 21:37:11 2024
+	actual:   Mon Sep 23 21:41:10 2024
+file: scale_mux.sv
+	module worklib.scale_mux:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		scale_mux_test
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.scale_mux:sv <0x6730e00a>
+			streams:   1, words:   240
+		worklib.scale_mux_test:sv <0x2260f178>
+			streams:   8, words: 10879
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Registers:                 6       6
+		Scalar wires:              1       -
+		Vectored wires:            4       -
+		Always blocks:             1       1
+		Initial blocks:            2       2
+		Pseudo assignments:        4       -
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.scale_mux_test:sv
+Loading snapshot worklib.scale_mux_test:sv .................... Done
+xcelium> source /opt/cadence/XCELIUM2303/tools/xcelium/files/xmsimrc
+xcelium> run
+0ns in_a=00 in_b=00 sel_a=0 out=00
+1ns in_a=00 in_b=00 sel_a=1 out=00
+2ns in_a=00 in_b=ff sel_a=0 out=ff
+3ns in_a=00 in_b=ff sel_a=1 out=00
+4ns in_a=ff in_b=00 sel_a=0 out=00
+5ns in_a=ff in_b=00 sel_a=1 out=ff
+6ns in_a=ff in_b=ff sel_a=0 out=ff
+7ns in_a=ff in_b=ff sel_a=1 out=ff
+MUX TEST PASSED
+./scale_mux_test.sv:58       $finish(0) ;
+xcelium> exit
+TOOL:	xrun	23.03-s005: Exiting on Sep 23, 2024 at 21:41:28 -03  (total: 00:00:02)

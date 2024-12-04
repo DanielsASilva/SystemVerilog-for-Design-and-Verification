@@ -1,0 +1,61 @@
+s1(07Nov2024:23:01:57):  xrun mem.sv mem_interface.sv mem_test.sv 
+s2(07Nov2024:23:02:35):  xrun mem.sv mem_interface.sv mem_test.sv 
+s3(07Nov2024:23:05:08):  xrun mem.sv mem_interface.sv mem_test.sv 
+s4(07Nov2024:23:05:26):  xrun mem.sv mem_interface.sv mem_test.sv 
+s5(07Nov2024:23:05:34):  xrun mem.sv mem_interface.sv mem_test.sv 
+s6(07Nov2024:23:09:48):  xrun mem.sv mem_interface.sv mem_test.sv 
+s7(07Nov2024:23:10:04):  xrun mem.sv mem_interface.sv mem_test.sv 
+s8(07Nov2024:23:10:23):  xrun mem.sv mem_interface.sv mem_test.sv 
+s9(07Nov2024:23:10:41):  xrun mem.sv mem_interface.sv mem_test.sv 
+s10(07Nov2024:23:10:59):  xrun mem.sv mem_interface.sv mem_test.sv 
+s11(07Nov2024:23:11:10):  xrun mem.sv mem_interface.sv mem_test.sv 
+s12(07Nov2024:23:11:49):  xrun mem_interface.sv 
+s13(07Nov2024:23:11:52):  xrun mem.sv mem_interface.sv mem_test.sv 
+s14(07Nov2024:23:13:37):  xrun mem.sv mem_interface.sv mem_test.sv 
+s15(07Nov2024:23:13:49):  xrun mem.sv mem_interface.sv mem_test.sv 
+s16(07Nov2024:23:14:23):  xrun mem.sv mem_interface.sv mem_test.sv 
+s17(07Nov2024:23:14:27):  xrun mem.sv mem_interface.sv mem_test.sv 
+s18(07Nov2024:23:16:04):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s19(07Nov2024:23:17:03):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s20(07Nov2024:23:17:28):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s21(07Nov2024:23:19:15):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s22(07Nov2024:23:19:55):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s23(07Nov2024:23:20:31):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s24(07Nov2024:23:21:35):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s25(07Nov2024:23:21:47):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s26(07Nov2024:23:22:06):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s27(07Nov2024:23:22:46):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s28(07Nov2024:23:23:14):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s29(07Nov2024:23:23:38):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s30(07Nov2024:23:23:40):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s31(07Nov2024:23:23:41):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s32(07Nov2024:23:23:42):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s33(07Nov2024:23:24:43):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s34(07Nov2024:23:25:19):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s35(07Nov2024:23:25:32):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s36(07Nov2024:23:43:27):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s37(07Nov2024:23:56:15):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s38(07Nov2024:23:56:31):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s39(07Nov2024:23:58:13):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s40(08Nov2024:00:19:36):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s41(08Nov2024:00:19:51):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s42(08Nov2024:00:20:28):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s43(08Nov2024:00:22:36):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s44(08Nov2024:00:22:47):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s45(08Nov2024:00:27:13):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s46(08Nov2024:00:28:09):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s47(08Nov2024:00:32:23):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s48(08Nov2024:00:34:47):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s49(08Nov2024:00:34:49):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s50(08Nov2024:00:34:49):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s51(08Nov2024:00:34:50):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s52(08Nov2024:00:35:34):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s53(08Nov2024:00:39:00):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s54(08Nov2024:00:39:03):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+s55(08Nov2024:00:39:53):  xrun mem.sv mem_interface.sv mem_test.sv top.sv 
+#e56(04Dec2024:00:16:30): source ./xcelium.d/env.d/env.history.04Dec2024_00_16_30
+s56(04Dec2024:00:16:30):  xrun mem_interface.sv 
+#e57(04Dec2024:00:16:39): source ./xcelium.d/env.d/env.history.04Dec2024_00_16_39
+s57(04Dec2024:00:16:39):  xrun mem.sv mem_test top.sv 
+#e58(04Dec2024:00:16:44): source ./xcelium.d/env.d/env.history.04Dec2024_00_16_44
+s58(04Dec2024:00:16:44):  xrun mem.sv mem_test.sv top.sv 

@@ -1,0 +1,19 @@
+xrun: 23.03-s005: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.03-s005: Started on Nov 08, 2024 at 00:48:46 -03
+xrun
+	mem.sv
+	mem_test.sv
+	top.sv
+	-covdut mem_test
+	-coverage U
+	-covoverwrite
+	-gui
+	-access rwc
+file: mem_test.sv
+cg1 = new();
+    |
+xmvlog: *E,ECGINM (mem_test.sv,64|4): The covergroup instance name is not specified.
+	module worklib.mem_test:sv
+		errors: 1, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun	23.03-s005: Exiting on Nov 08, 2024 at 00:48:46 -03  (total: 00:00:00)

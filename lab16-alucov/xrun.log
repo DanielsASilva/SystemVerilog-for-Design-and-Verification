@@ -1,0 +1,115 @@
+xrun: 23.03-s005: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.03-s005: Started on Nov 06, 2024 at 19:36:58 -03
+xrun
+	alu.sv
+	alu_test.sv
+	-covdut alu_test
+	-coverage U
+	-covoverwrite
+	-gui
+	-access rwc
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		typedefs
+		$unit_0x65352c98
+		alu_test
+alu      alu1  (.out(out), .zero(zero), .clk(clk), .accum(accum), .data(data), .opcode(opcode));
+                       |
+xmelab: *W,CUVMPW (./alu_test.sv,36|23): port sizes differ in port connection(8/9) for the instance(alu_test) .
+alu      alu1  (.out(out), .zero(zero), .clk(clk), .accum(accum), .data(data), .opcode(opcode));
+                                                              |
+xmelab: *W,CUVMPW (./alu_test.sv,36|62): port sizes differ in port connection(8/9) for the instance(alu_test) .
+alu      alu1  (.out(out), .zero(zero), .clk(clk), .accum(accum), .data(data), .opcode(opcode));
+                                                                           |
+xmelab: *W,CUVMPW (./alu_test.sv,36|75): port sizes differ in port connection(8/9) for the instance(alu_test) .
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: functional
+	Generating native compiled code:
+		worklib.alu:sv <0x661c040f>
+			streams:   2, words:   753
+		worklib.alu_test:sv <0x4125b5cc>
+			streams:  15, words: 26885
+	Building instance specific data structures.
+xmelab: *W,CGPIDF: Covergroup "per_instance" option , by default, is set as 0.
+xmelab: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Verilog packages:          1       1
+		Registers:                 9       9
+		Scalar wires:              3       -
+		Vectored wires:            5       -
+		Always blocks:             3       3
+		Initial blocks:            4       4
+		Pseudo assignments:        6       -
+		Compilation units:         1       1
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.alu_test:sv
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /opt/cadence/XCELIUM2303/tools/xcelium/files/xmsimrc
+xcelium> run
+  20.0 ns opcode=HLT data=37 accum=da | zero=0 out=da
+  30.0 ns opcode=SKZ data=37 accum=da | zero=0 out=da
+  40.0 ns opcode=ADD data=37 accum=da | zero=0 out=11
+  50.0 ns opcode=AND data=37 accum=da | zero=0 out=12
+  60.0 ns opcode=XOR data=37 accum=da | zero=0 out=ed
+  70.0 ns opcode=LDA data=37 accum=da | zero=0 out=37
+  80.0 ns opcode=STO data=37 accum=da | zero=0 out=da
+  90.0 ns opcode=JMP data=37 accum=00 | zero=1 out=00
+ 100.0 ns opcode=ADD data=07 accum=12 | zero=0 out=19
+ 110.0 ns opcode=AND data=1f accum=35 | zero=0 out=15
+ 120.0 ns opcode=XOR data=1e accum=1d | zero=0 out=03
+ 130.0 ns opcode=LDA data=72 accum=00 | zero=1 out=72
+ 140.0 ns opcode=STO data=00 accum=10 | zero=0 out=10
+ALU TEST PASSED
+Simulation complete via $finish(1) at time 140 NS + 0
+./alu_test.sv:89       $finish;
+xcelium> coverage -analyze
+xmsim: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  alu_test(alu_test)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_00000000_66255349.ucm
+  data               :  ./cov_work/scope/test/icc_00000000_66255349.ucd
+
+Launching IMC...
+
+xmsim: *E,IMCPAT: IMC cannot be launched because it is not found in the PATH variable. IMC is now installed separately from Xcelium. Please add IMC install directory to the PATH variable..
+xcelium> coverage -analyze
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  alu_test(alu_test)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_00000000_66255349.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_00000000_66255349.ucd
+
+Launching IMC...
+
+xcelium> ^C
+xcelium> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  alu_test(alu_test)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_00000000_66255349.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_00000000_66255349.ucd
+TOOL:	xrun	23.03-s005: Exiting on Nov 06, 2024 at 19:37:35 -03  (total: 00:00:37)

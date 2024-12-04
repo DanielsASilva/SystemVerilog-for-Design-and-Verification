@@ -1,0 +1,37 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-RUNMODE
+-q
+-stop
+link
+-NOSYSTEMCLINK
+-novic
+-noscv
+-noedg
+-asext
+.s
+-ccext
+.c
+-objext
+.o
+-cxxext
+.cpp
+-cxxext
+.cc
+-xmscrc
+./xcelium.d/run.lnx86.23.03.d/xmsc_run
+-log
+./xcelium.d/run.lnx86.23.03.d/xmsc_run.log
+stdlibs.c
+-cdslib
+./xcelium.d/run.lnx86.23.03.d/cdsrun.lib
+-hdlvar
+./xcelium.d/run.lnx86.23.03.d/hdlrun.var
+-work
+worklib
+-test
+./xcelium.d/run.lnx86.23.03.d/run
+-I/opt/cadence/XCELIUM2303/tools/include
+-I/opt/cadence/XCELIUM2303/tools/inca/include

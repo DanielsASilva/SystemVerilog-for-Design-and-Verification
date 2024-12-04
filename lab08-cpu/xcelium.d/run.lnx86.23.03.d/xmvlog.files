@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+"/home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/cpu.sv"
+"/home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/cpu_test.sv"
+"/home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/mem.sv"
+"/home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/alu.sv"
+"/home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/control.sv"
+"/home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/counter.sv"
+"/home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/register.sv"
+"/home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/scale_mux.sv"

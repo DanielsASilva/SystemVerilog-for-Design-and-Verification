@@ -1,0 +1,8 @@
+cpu.sv
+cpu_test.sv
+mem.sv
+alu.sv
+control.sv
+counter.sv
+register.sv
+scale_mux.sv

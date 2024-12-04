@@ -1,0 +1,12 @@
+s1(26Sep2024:08:58:36):  xrun typedefs.sv 
+s2(26Sep2024:08:58:47):  xrun alu.sv alu_test.sv 
+s3(26Sep2024:08:59:14):  xrun alu.sv alu_test.sv 
+s4(26Sep2024:08:59:38):  xrun alu.sv alu_test.sv 
+s5(26Sep2024:09:00:00):  xrun alu.sv alu_test.sv 
+s6(26Sep2024:09:00:31):  xrun alu.sv alu_test.sv typedefs.sv 
+s7(26Sep2024:09:00:38):  xrun typedefs.sv 
+s8(26Sep2024:09:00:40):  xrun alu.sv alu_test.sv 
+s9(26Sep2024:09:01:53):  xrun alu.sv alu_test.sv 
+s10(26Sep2024:09:02:34):  xrun alu.sv alu_test.sv 
+s11(26Sep2024:09:03:06):  xrun alu.sv alu_test.sv 
+s12(26Sep2024:09:03:22):  xrun alu.sv alu_test.sv 

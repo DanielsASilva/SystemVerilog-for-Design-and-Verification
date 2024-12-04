@@ -1,0 +1,65 @@
+xrun: 23.03-s005: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.03-s005: Started on Sep 26, 2024 at 09:03:22 -03
+xrun
+	alu.sv
+	alu_test.sv
+file: alu.sv
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		typedefs
+		$unit_0x65352c98
+		alu_test
+alu      alu1  (.out(out), .zero(zero), .clk(clk), .accum(accum), .data(data), .opcode(opcode));
+                       |
+xmelab: *W,CUVMPW (./alu_test.sv,36|23): port sizes differ in port connection(8/9) for the instance(alu_test) .
+alu      alu1  (.out(out), .zero(zero), .clk(clk), .accum(accum), .data(data), .opcode(opcode));
+                                                              |
+xmelab: *W,CUVMPW (./alu_test.sv,36|62): port sizes differ in port connection(8/9) for the instance(alu_test) .
+alu      alu1  (.out(out), .zero(zero), .clk(clk), .accum(accum), .data(data), .opcode(opcode));
+                                                                           |
+xmelab: *W,CUVMPW (./alu_test.sv,36|75): port sizes differ in port connection(8/9) for the instance(alu_test) .
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.alu:sv <0x652b47e1>
+			streams:   2, words:   678
+		worklib.alu_test:sv <0x4f924748>
+			streams:  12, words: 20520
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Verilog packages:          1       1
+		Registers:                 9       9
+		Scalar wires:              3       -
+		Vectored wires:            5       -
+		Always blocks:             3       3
+		Initial blocks:            4       4
+		Pseudo assignments:        6       -
+		Compilation units:         1       1
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.alu_test:sv
+Loading snapshot worklib.alu_test:sv .................... Done
+xcelium> source /opt/cadence/XCELIUM2303/tools/xcelium/files/xmsimrc
+xcelium> run
+  20.0 ns opcode=HLT data=37 accum=da | zero=0 out=da
+  30.0 ns opcode=SKZ data=37 accum=da | zero=0 out=da
+  40.0 ns opcode=ADD data=37 accum=da | zero=0 out=11
+  50.0 ns opcode=AND data=37 accum=da | zero=0 out=12
+  60.0 ns opcode=XOR data=37 accum=da | zero=0 out=ed
+  70.0 ns opcode=LDA data=37 accum=da | zero=0 out=37
+  80.0 ns opcode=STO data=37 accum=da | zero=0 out=da
+  90.0 ns opcode=JMP data=37 accum=00 | zero=1 out=00
+ 100.0 ns opcode=ADD data=07 accum=12 | zero=0 out=19
+ 110.0 ns opcode=AND data=1f accum=35 | zero=0 out=15
+ 120.0 ns opcode=XOR data=1e accum=1d | zero=0 out=03
+ 130.0 ns opcode=LDA data=72 accum=00 | zero=1 out=72
+ 140.0 ns opcode=STO data=00 accum=10 | zero=0 out=10
+ALU TEST PASSED
+Simulation complete via $finish(1) at time 140 NS + 0
+./alu_test.sv:71       $finish;
+xcelium> exit
+TOOL:	xrun	23.03-s005: Exiting on Sep 26, 2024 at 09:03:22 -03  (total: 00:00:00)

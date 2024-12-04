@@ -1,0 +1,19 @@
+s1(13Oct2024:21:44:18):  xrun mem_interface.sv 
+s2(13Oct2024:21:44:34):  xrun mem.sv mem_test.sv top.sv 
+s3(13Oct2024:21:46:53):  xrun mem.sv mem_test.sv top.sv 
+s4(13Oct2024:21:47:44):  xrun mem.sv mem_test.sv top.sv 
+s5(13Oct2024:21:53:21):  xrun mem.sv mem_test.sv top.sv 
+s6(13Oct2024:21:53:53):  xrun mem_interface.sv 
+s7(13Oct2024:21:53:58):  xrun mem.sv mem_test.sv top.sv 
+s8(13Oct2024:21:54:02):  xrun mem.sv mem_test.sv top.sv 
+s9(13Oct2024:21:54:37):  xrun mem_interface.sv 
+s10(13Oct2024:21:54:40):  xrun mem.sv mem_test.sv top.sv 
+s11(14Oct2024:08:45:48):  xrun memi.sv 
+s12(14Oct2024:08:46:01):  xrun mem_interface.sv 
+s13(14Oct2024:08:46:17):  xrun mem.sv mem_test.sv top.sv 
+s14(14Oct2024:08:47:48):  xrun mem_interface.sv 
+s15(14Oct2024:08:47:51):  xrun mem.sv mem_test.sv top.sv 
+s16(14Oct2024:08:55:35):  xrun mem_interface.sv 
+s17(14Oct2024:08:55:38):  xrun mem.sv mem_test.sv top.sv 
+s18(14Oct2024:08:55:50):  xrun mem.sv mem_test.sv top.sv 
+s19(14Oct2024:08:56:21):  xrun mem.sv mem_test.sv top.sv 

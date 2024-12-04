@@ -1,0 +1,54 @@
+xrun: 23.03-s005: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.03-s005: Started on Nov 01, 2024 at 21:56:38 -03
+xrun
+	counter.sv
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Fri Nov  1 21:56:00 2024
+	actual:   Fri Nov  1 21:56:36 2024
+file: counter.sv
+			c1.getcount();
+			          |
+xmvlog: *W,FUNTSK (counter.sv,153|13): function called as a task without void'().
+			uc2.getcount();
+			           |
+xmvlog: *W,FUNTSK (counter.sv,161|14): function called as a task without void'().
+	module worklib.counterclass:sv
+		errors: 0, warnings: 2
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counterclass
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counterclass:sv <0x126de31d>
+			streams:  37, words: 16941
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    1       1
+		Registers:                 43      51
+		Initial blocks:             4       4
+		SV Class declarations:      4       4
+		SV Class specializations:   4       4
+	Writing initial simulation snapshot: worklib.counterclass:sv
+Loading snapshot worklib.counterclass:sv .................... Done
+xcelium> source /opt/cadence/XCELIUM2303/tools/xcelium/files/xmsimrc
+xcelium> run
+the number of upcounter instances is 1
+the number of downcounter instances is 0
+test 1
+count = 3 carry = 0
+count = 4 carry = 0
+count = 5 carry = 0
+count = 0 carry = 1
+count = 1 carry = 0
+test 2
+count = 2 carry = 0
+count = 3 carry = 0
+count = 4 carry = 0
+count = 5 carry = 0
+count = 0 carry = 1
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun	23.03-s005: Exiting on Nov 01, 2024 at 21:56:38 -03  (total: 00:00:00)

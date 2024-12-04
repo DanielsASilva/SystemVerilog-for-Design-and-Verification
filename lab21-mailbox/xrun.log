@@ -1,0 +1,129 @@
+xrun: 23.03-s005: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.03-s005: Started on Nov 18, 2024 at 14:36:22 -03
+xrun
+	ex_trans_pkg.sv
+	mailbox_consumer_m.sv
+	mailbox_if.sv
+	mailbox_producer_m.sv
+	mailbox_top_m.sv
+file: ex_trans_pkg.sv
+    function new(int unsigned config) ;
+                                   |
+xmvlog: *W,CFGKWD (ex_trans_pkg.sv,33|35): A Verilog config keyword was found where an identifier was expected.
+      this.config = config ;
+                |
+xmvlog: *W,CFGKWD (ex_trans_pkg.sv,35|16): A Verilog config keyword was found where an identifier was expected.
+      this.config = config ;
+                         |
+xmvlog: *W,CFGKWD (ex_trans_pkg.sv,35|25): A Verilog config keyword was found where an identifier was expected.
+    local int unsigned config ; // meaningless incremental property
+                            |
+xmvlog: *W,CFGKWD (ex_trans_pkg.sv,40|28): A Verilog config keyword was found where an identifier was expected.
+file: mailbox_consumer_m.sv
+	module worklib.consumer_m:sv
+		errors: 0, warnings: 0
+file: mailbox_if.sv
+	interface worklib.mailbox_if:sv
+		errors: 0, warnings: 0
+file: mailbox_producer_m.sv
+	module worklib.producer_m:sv
+		errors: 0, warnings: 0
+file: mailbox_top_m.sv
+	module worklib.top_m:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		ex_trans_pkg
+		top_m
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.consumer_m:sv <0x1180387b>
+			streams:   8, words:  8909
+		worklib.producer_m:sv <0x3e7e7da9>
+			streams:   1, words:  8436
+		worklib.mailbox_if:sv <0x03eefd9b>
+			streams:   8, words: 13611
+		worklib.ex_trans_pkg:sv <0x51d1cff7>
+			streams:  27, words:  8599
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                      Instances  Unique
+		Modules:                      3       3
+		Interfaces:                   1       1
+		Verilog packages:             1       1
+		Registers:                   49      55
+		Always blocks:                4       4
+		Initial blocks:               6       6
+		SV Class declarations:        4       4
+		SV Class specializations:     4       4
+		Simulation timescale:      10ps
+	Writing initial simulation snapshot: worklib.top_m:sv
+Loading snapshot worklib.top_m:sv .................... Done
+SVSEED default: 1
+xcelium> source /opt/cadence/XCELIUM2303/tools/xcelium/files/xmsimrc
+xcelium> run
+ 17:       Produced  transaction          1 of type my_tr_synch_c
+ 17: Begin consuming transaction          1 of type my_tr_synch_c
+ 24:       Produced  transaction          2 of type my_tr_config_c
+ 24: Begin consuming transaction          2 of type my_tr_config_c
+ 26: End   consuming transaction          1 of type my_tr_synch_c
+ 29: End   consuming transaction          2 of type my_tr_config_c
+ 30:       Produced  transaction          3 of type my_tr_comms_c
+ 30: Begin consuming transaction          3 of type my_tr_comms_c
+ 37: End   consuming transaction          3 of type my_tr_comms_c
+ 47:       Produced  transaction          4 of type my_tr_synch_c
+ 47: Begin consuming transaction          4 of type my_tr_synch_c
+ 55: End   consuming transaction          4 of type my_tr_synch_c
+ 71:       Produced  transaction          5 of type my_tr_comms_c
+ 71: Begin consuming transaction          5 of type my_tr_comms_c
+ 86: End   consuming transaction          5 of type my_tr_comms_c
+ 90:       Produced  transaction          6 of type my_tr_comms_c
+ 90: Begin consuming transaction          6 of type my_tr_comms_c
+ 93:       Produced  transaction          7 of type my_tr_comms_c
+ 95: End   consuming transaction          6 of type my_tr_comms_c
+ 95: Begin consuming transaction          7 of type my_tr_comms_c
+ 98:       Produced  transaction          8 of type my_tr_comms_c
+100:       Produced  transaction          9 of type my_tr_comms_c
+108: End   consuming transaction          7 of type my_tr_comms_c
+108: Begin consuming transaction          8 of type my_tr_comms_c
+111:       Produced  transaction         10 of type my_tr_config_c
+111: Begin consuming transaction         10 of type my_tr_config_c
+112:       Produced  transaction         11 of type my_tr_comms_c
+113:       Produced  transaction         12 of type my_tr_comms_c
+114: End   consuming transaction          8 of type my_tr_comms_c
+114: Begin consuming transaction          9 of type my_tr_comms_c
+114:       Produced  transaction         13 of type my_tr_comms_c
+120:       Produced  transaction         14 of type my_tr_comms_c
+121: End   consuming transaction         10 of type my_tr_config_c
+122: End   consuming transaction          9 of type my_tr_comms_c
+122: Begin consuming transaction         11 of type my_tr_comms_c
+127: End   consuming transaction         11 of type my_tr_comms_c
+127: Begin consuming transaction         12 of type my_tr_comms_c
+133: End   consuming transaction         12 of type my_tr_comms_c
+133: Begin consuming transaction         13 of type my_tr_comms_c
+141:       Produced  transaction         15 of type my_tr_comms_c
+144:       Produced  transaction         16 of type my_tr_comms_c
+146: End   consuming transaction         13 of type my_tr_comms_c
+146: Begin consuming transaction         14 of type my_tr_comms_c
+156: End   consuming transaction         14 of type my_tr_comms_c
+156: Begin consuming transaction         15 of type my_tr_comms_c
+160:       Produced  transaction         17 of type my_tr_comms_c
+162:       Produced  transaction         18 of type my_tr_comms_c
+164: End   consuming transaction         15 of type my_tr_comms_c
+164: Begin consuming transaction         16 of type my_tr_comms_c
+169:       Produced  transaction         19 of type my_tr_config_c
+169: Begin consuming transaction         19 of type my_tr_config_c
+170:       Produced  transaction         20 of type my_tr_comms_c
+171: End   consuming transaction         16 of type my_tr_comms_c
+171: Begin consuming transaction         17 of type my_tr_comms_c
+176: End   consuming transaction         19 of type my_tr_config_c
+181: End   consuming transaction         17 of type my_tr_comms_c
+181: Begin consuming transaction         18 of type my_tr_comms_c
+187: End   consuming transaction         18 of type my_tr_comms_c
+187: Begin consuming transaction         20 of type my_tr_comms_c
+192: End   consuming transaction         20 of type my_tr_comms_c
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun	23.03-s005: Exiting on Nov 18, 2024 at 14:36:22 -03  (total: 00:00:00)

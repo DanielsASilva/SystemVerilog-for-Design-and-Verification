@@ -1,0 +1,76 @@
+xrun: 23.03-s005: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.03-s005: Started on Nov 12, 2024 at 22:27:07 -03
+xrun
+	mux.sv
+	mux_test.sv
+	-gui
+	-access +rwc
+	-linedebug
+xrun: *W,BADPRF: The -linedebug option may have an adverse performance impact.
+Recompiling... reason: file './mux.sv' is newer than expected.
+	expected: Tue Nov 12 22:06:22 2024
+	actual:   Tue Nov 12 22:27:00 2024
+file: mux.sv
+	module worklib.mux:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		t_mux
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mux:sv <0x1ab70789>
+			streams:  13, words:  9847
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:              40      40
+		Scalar wires:            4       -
+		Vectored wires:          5       -
+		Always blocks:          14      14
+		Initial blocks:          7       7
+		Pseudo assignments:      8       -
+		Assertions:              3       3
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.t_mux:sv
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /opt/cadence/XCELIUM2303/tools/xcelium/files/xmsimrc
+xcelium> stop -create -file {/home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab18-svamux/mux_test.sv} -line 69 -all
+Created stop 1
+xcelium> run
+Starting 1st set of test vectors.
+Finished 1st set of test vectors.
+37 NS + 0 (stop 1: ./mux_test.sv:69)
+xcelium> run
+Starting 2nd set of test vectors.
+Finished 2nd set of test vectors.
+Simulation stopped via $stop(1) at time 117 NS + 0
+xcelium> run
+Simulation interrupted at 162726885 NS + 2
+xcelium> reset
+Loaded snapshot worklib.t_mux:sv
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm t_mux.mux1.A3 t_mux.mux1.clock t_mux.mux1.ip3 t_mux.mux1.sel3 t_mux.mux1.sel1 t_mux.mux1.sel2 t_mux.mux1.mux_op t_mux.mux1.A2 t_mux.mux1.ip2 t_mux.mux1.A1 t_mux.mux1.ip1
+Created probe 1
+xcelium> run
+Starting 1st set of test vectors.
+Finished 1st set of test vectors.
+37 NS + 0 (stop 1: ./mux_test.sv:69)
+xcelium> run
+Starting 2nd set of test vectors.
+Finished 2nd set of test vectors.
+Simulation stopped via $stop(1) at time 117 NS + 0
+xcelium> run
+Simulation interrupted at 9043795 NS + 0
+xcelium> ^C
+xcelium> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun	23.03-s005: Exiting on Nov 12, 2024 at 22:29:11 -03  (total: 00:02:04)

@@ -1,0 +1,5 @@
+-nocopyright
+-COMPILEONLY
+-cdslib /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab20-simpledpi/./xcelium.d/run.lnx86.23.03.d/cdsrun.lib
+-hdlvar /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab20-simpledpi/./xcelium.d/run.lnx86.23.03.d/hdlrun.var
+-work worklib

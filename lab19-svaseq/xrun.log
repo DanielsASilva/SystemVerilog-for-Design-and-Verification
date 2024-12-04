@@ -1,0 +1,77 @@
+xrun: 23.03-s005: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.03-s005: Started on Nov 13, 2024 at 20:07:22 -03
+xrun
+	seqtest.sv
+	-gui
+	-access +rwc
+	-linedebug
+xrun: *W,BADPRF: The -linedebug option may have an adverse performance impact.
+Recompiling... reason: file './seqtest.sv' is newer than expected.
+	expected: Wed Nov 13 19:37:55 2024
+	actual:   Wed Nov 13 20:07:19 2024
+file: seqtest.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.top:sv <0x3847aeeb>
+			streams:  37, words: 30795
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 1       1
+		Registers:              30      30
+		Always blocks:          13      13
+		Initial blocks:          5       5
+		Assertions:              2       2
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.top:sv
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /opt/cadence/XCELIUM2303/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm top.COMPLEX_ASSERTION top.CLK top.X top.C top.B top.A top.J top.K
+Created probe 1
+xcelium> run
+TESTING COMPLEX SEQUENCE
+  5ns: Testing incomplete enabling sequence
+ 65ns: Testing passing fulfilling sequence
+165ns: Testing passing fulfilling sequence
+285ns: Testing disabled enabling sequence
+415ns: Testing disabled fulfilling sequence
+525ns: Testing failing fulfilling sequence
+		C == 1 ##1 B[*1:3] ##1 A == 1 |=> J[*4] ##1 K == 1;
+		                                               |
+xmsim: *E,ASRTST (./seqtest.sv,121): (time 610 NS) Assertion top.COMPLEX_ASSERTION has failed (8 cycles, starting 540 NS)
+610 NS + 2 (Assertion output stop: top.COMPLEX_ASSERTION = failed)
+xcelium> run
+635ns: Testing Question 4 sequence
+		C == 1 ##1 B[*1:3] ##1 A == 1 |=> J[*4] ##1 K == 1;
+		                                               |
+xmsim: *E,ASRTST (./seqtest.sv,121): (time 730 NS) Assertion top.COMPLEX_ASSERTION has failed (9 cycles, starting 650 NS)
+730 NS + 2 (Assertion output stop: top.COMPLEX_ASSERTION = failed)
+xcelium> run
+755ns: Testing Question 5 sequence
+		C == 1 ##1 B[*1:3] ##1 A == 1 |=> J[*4] ##1 K == 1;
+		                                  |
+xmsim: *E,ASRTST (./seqtest.sv,121): (time 800 NS) Assertion top.COMPLEX_ASSERTION has failed (4 cycles, starting 770 NS)
+800 NS + 2 (Assertion output stop: top.COMPLEX_ASSERTION = failed)
+xcelium> run
+875ns: Testing Question 6 sequence
+TESTING IS COMPLETE
+Simulation complete via $finish(1) at time 995 NS + 1
+./seqtest.sv:104       $finish;
+xcelium> ^C
+xcelium> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun	23.03-s005: Exiting on Nov 13, 2024 at 20:08:14 -03  (total: 00:00:52)

@@ -1,0 +1,84 @@
+xrun: 23.03-s005: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.03-s005: Started on Nov 18, 2024 at 14:48:14 -03
+xrun
+	semaphore_m.sv
+file: semaphore_m.sv
+	module worklib.semaphore_m:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		semaphore_m
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.semaphore_m:sv <0x16badaf8>
+			streams:  12, words: 13636
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 1       1
+		Registers:              21      21
+		Initial blocks:          7       7
+		Parallel blocks:         1       1
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.semaphore_m:sv
+Loading snapshot worklib.semaphore_m:sv .................... Done
+SVSEED default: 1
+xcelium> source /opt/cadence/XCELIUM2303/tools/xcelium/files/xmsimrc
+xcelium> run
+  2ns: user1 get key blocking
+  2ns: user1 got key
+  3ns: user1 put key
+  7ns: user0 get key blocking
+  7ns: user0 got key
+  9ns: user1 get key blocking
+ 14ns: user0 put key
+ 14ns: user1 got key
+ 20ns: user0 get key nonblock
+ 20ns: user1 put key
+ 21ns: user0 got key
+ 21ns: user1 get key blocking
+ 30ns: user0 put key
+ 30ns: user1 got key
+ 36ns: user0 get key nonblock
+ 38ns: user1 put key
+ 38ns: user0 got key
+ 41ns: user1 get key nonblock
+ 41ns: user0 put key
+ 42ns: user1 got key
+ 45ns: user1 put key
+ 48ns: user0 get key blocking
+ 48ns: user0 got key
+ 50ns: user1 get key blocking
+ 57ns: user0 put key
+ 57ns: user1 got key
+ 61ns: user0 get key blocking
+ 65ns: user1 put key
+ 65ns: user0 got key
+ 69ns: user1 get key blocking
+ 72ns: user0 put key
+ 72ns: user1 got key
+ 77ns: user1 put key
+ 79ns: user0 get key blocking
+ 79ns: user0 got key
+ 80ns: user1 get key blocking
+ 83ns: user0 put key
+ 83ns: user1 got key
+ 88ns: user1 put key
+ 90ns: user0 get key blocking
+ 90ns: user0 got key
+ 94ns: user1 get key blocking
+ 94ns: user0 put key
+ 94ns: user1 got key
+101ns: user0 get key nonblock
+101ns: user1 put key
+102ns: user0 got key
+106ns: user1 get key nonblock
+107ns: user0 put key
+107ns: user1 got key
+108ns: user1 put key
+TEST COMPLETE
+./semaphore_m.sv:126       $finish(0);
+xcelium> exit
+TOOL:	xrun	23.03-s005: Exiting on Nov 18, 2024 at 14:48:16 -03  (total: 00:00:02)

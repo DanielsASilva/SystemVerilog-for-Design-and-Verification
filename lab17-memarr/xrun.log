@@ -1,0 +1,236 @@
+xrun: 24.09-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun	24.09-s001: Started on Dec 04, 2024 at 00:16:44 -03
+xrun
+	mem.sv
+	mem_test.sv
+	top.sv
+file: mem.sv
+	module worklib.mem:sv
+		errors: 0, warnings: 0
+file: mem_test.sv
+	module worklib.mem_test:sv
+		errors: 0, warnings: 0
+file: top.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mem:sv <0x6e930952>
+			streams:   4, words:  1251
+		worklib.top:sv <0x4e43a226>
+			streams:   2, words:   310
+		worklib.mem_test:sv <0x45dd3a2a>
+			streams:  13, words: 13061
+		worklib.memi:sv <0x2cc939bd>
+			streams:   7, words:  7524
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                     Instances  Unique
+		Modules:                     3       3
+		Interfaces:                  1       1
+		Registers:                  44      47
+		Scalar wires:                1       -
+		Always blocks:               3       3
+		Initial blocks:              5       5
+		SV Class declarations:       1       1
+		SV Class specializations:    1       1
+		Simulation timescale:      1ns
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+xcelium> source /opt/cadence/XCELIUM2303/tools/xcelium/files/xmsimrc
+xcelium> run
+Dynamic Array
+write - memory[00100] = 01010100
+write - memory[10110] = 01000101
+write - memory[01011] = 01001111
+write - memory[00110] = 01010011
+write - memory[01011] = 01010001
+write - memory[01011] = 01001001
+write - memory[10010] = 01010100
+write - memory[10100] = 01001100
+write - memory[10110] = 01100101
+write - memory[01110] = 01001010
+write - memory[00010] = 01010101
+write - memory[00101] = 01000101
+write - memory[11010] = 01010010
+write - memory[01000] = 01010100
+write - memory[10110] = 01000111
+write - memory[00111] = 01110010
+write - memory[00100] = 01000010
+write - memory[10010] = 01101110
+write - memory[00110] = 01000110
+write - memory[10111] = 01010000
+write - memory[01101] = 01001100
+write - memory[11010] = 01101111
+write - memory[10010] = 01000101
+write - memory[11101] = 01001010
+write - memory[10001] = 01110110
+write - memory[01100] = 01100110
+write - memory[01100] = 01101101
+write - memory[10100] = 01010101
+write - memory[10111] = 01010101
+write - memory[10101] = 01001100
+write - memory[01100] = 01010100
+write - memory[10011] = 01010101
+unwritten address [00000]
+unwritten address [00001]
+read  - memory[00010] = 01010101
+unwritten address [00011]
+read  - memory[00100] = 01000010
+read  - memory[00101] = 01000101
+read  - memory[00110] = 01000110
+read  - memory[00111] = 01110010
+read  - memory[01000] = 01010100
+unwritten address [01001]
+unwritten address [01010]
+read  - memory[01011] = 01001001
+read  - memory[01100] = 01010100
+read  - memory[01101] = 01001100
+read  - memory[01110] = 01001010
+unwritten address [01111]
+unwritten address [10000]
+read  - memory[10001] = 01110110
+read  - memory[10010] = 01000101
+read  - memory[10011] = 01010101
+read  - memory[10100] = 01010101
+read  - memory[10101] = 01001100
+read  - memory[10110] = 01000111
+read  - memory[10111] = 01010101
+unwritten address [11000]
+unwritten address [11001]
+read  - memory[11010] = 01101111
+unwritten address [11011]
+unwritten address [11100]
+read  - memory[11101] = 01001010
+unwritten address [11110]
+unwritten address [11111]
+Associative Array
+write - memory[00101] = 01001110
+write - memory[10010] = 01000111
+write - memory[10100] = 01010100
+write - memory[10010] = 01011001
+write - memory[11000] = 01001100
+write - memory[10010] = 01010100
+write - memory[11001] = 01000111
+write - memory[10011] = 01011010
+write - memory[11011] = 01011001
+write - memory[00001] = 01011010
+write - memory[11100] = 01010111
+write - memory[11010] = 01001111
+write - memory[10010] = 01010110
+write - memory[10000] = 01001111
+write - memory[01111] = 01010010
+write - memory[11101] = 01001011
+write - memory[10011] = 01000111
+write - memory[10110] = 01010111
+write - memory[10111] = 01000011
+write - memory[11101] = 01000101
+write - memory[10000] = 01010000
+write - memory[11100] = 01101111
+write - memory[01011] = 01001010
+write - memory[11011] = 01100111
+write - memory[00110] = 01011000
+write - memory[01001] = 01000111
+write - memory[10010] = 01100111
+write - memory[10001] = 01001100
+write - memory[11000] = 01000100
+write - memory[10001] = 01001100
+write - memory[11100] = 01000001
+write - memory[00001] = 01011001
+positions to read: 19
+read  - memory[00001] = 01011001
+read  - memory[00101] = 01001110
+read  - memory[00110] = 01011000
+read  - memory[01001] = 01000111
+read  - memory[01011] = 01001010
+read  - memory[01111] = 01010010
+read  - memory[10000] = 01010000
+read  - memory[10001] = 01001100
+read  - memory[10010] = 01100111
+read  - memory[10011] = 01000111
+read  - memory[10100] = 01010100
+read  - memory[10110] = 01010111
+read  - memory[10111] = 01000011
+read  - memory[11000] = 01000100
+read  - memory[11001] = 01000111
+read  - memory[11010] = 01001111
+read  - memory[11011] = 01100111
+read  - memory[11100] = 01000001
+read  - memory[11101] = 01000101
+Queue
+write - memory[00000] = 01000011
+write - memory[00001] = 01010011
+write - memory[00010] = 01010111
+write - memory[00011] = 01010110
+write - memory[00100] = 01110011
+write - memory[00101] = 01011010
+write - memory[00110] = 01001001
+write - memory[00111] = 01100010
+write - memory[01000] = 01110001
+write - memory[01001] = 01011000
+write - memory[01010] = 01001000
+write - memory[01011] = 01001100
+write - memory[01100] = 01001110
+write - memory[01101] = 01010110
+write - memory[01110] = 01101101
+write - memory[01111] = 01101000
+write - memory[10000] = 01011000
+write - memory[10001] = 01010100
+write - memory[10010] = 01010010
+write - memory[10011] = 01000111
+write - memory[10100] = 01100101
+write - memory[10101] = 01000011
+write - memory[10110] = 01010111
+write - memory[10111] = 01001000
+write - memory[11000] = 01010100
+write - memory[11001] = 01010101
+write - memory[11010] = 01110011
+write - memory[11011] = 01010000
+write - memory[11100] = 01011010
+write - memory[11101] = 01101001
+write - memory[11110] = 01001100
+write - memory[11111] = 01001000
+read  - memory[00000] = 01000011
+read  - memory[00001] = 01010011
+read  - memory[00010] = 01010111
+read  - memory[00011] = 01010110
+read  - memory[00100] = 01110011
+read  - memory[00101] = 01011010
+read  - memory[00110] = 01001001
+read  - memory[00111] = 01100010
+read  - memory[01000] = 01110001
+read  - memory[01001] = 01011000
+read  - memory[01010] = 01001000
+read  - memory[01011] = 01001100
+read  - memory[01100] = 01001110
+read  - memory[01101] = 01010110
+read  - memory[01110] = 01101101
+read  - memory[01111] = 01101000
+read  - memory[10000] = 01011000
+read  - memory[10001] = 01010100
+read  - memory[10010] = 01010010
+read  - memory[10011] = 01000111
+read  - memory[10100] = 01100101
+read  - memory[10101] = 01000011
+read  - memory[10110] = 01010111
+read  - memory[10111] = 01001000
+read  - memory[11000] = 01010100
+read  - memory[11001] = 01010101
+read  - memory[11010] = 01110011
+read  - memory[11011] = 01010000
+read  - memory[11100] = 01011010
+read  - memory[11101] = 01101001
+read  - memory[11110] = 01001100
+read  - memory[11111] = 01001000
+TEST PASSED
+Simulation complete via $finish(1) at time 3310 NS + 1
+./mem_test.sv:128     $finish;
+xcelium> exit
+TOOL:	xrun	24.09-s001: Exiting on Dec 04, 2024 at 00:16:45 -03  (total: 00:00:01)

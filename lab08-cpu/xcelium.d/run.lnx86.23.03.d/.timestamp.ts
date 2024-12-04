@@ -1,0 +1,9 @@
+1727352200 /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/alu.sv
+1727136999 /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/register.sv
+1727138470 /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/scale_mux.sv
+1592215880 /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/cpu_test.sv
+1727188817 /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/counter.sv
+1727282553 /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/typedefs.sv
+1727282954 /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/control.sv
+1518181990 /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/mem.sv
+1518181990 /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab08-cpu/cpu.sv

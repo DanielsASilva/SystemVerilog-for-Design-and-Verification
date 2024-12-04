@@ -1,0 +1,304 @@
+xrun: 23.03-s005: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.03-s005: Started on Nov 02, 2024 at 01:00:36 -03
+xrun
+	mem.sv
+	mem_test.sv
+	top.sv
+Recompiling... reason: file './mem_test.sv' is newer than expected.
+	expected: Sat Nov  2 00:59:56 2024
+	actual:   Sat Nov  2 01:00:33 2024
+file: mem_test.sv
+	module worklib.mem_test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mem_test:sv <0x589fb0a6>
+			streams:  13, words:  9533
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                     Instances  Unique
+		Modules:                     3       3
+		Interfaces:                  1       1
+		Registers:                  38      41
+		Scalar wires:                1       -
+		Always blocks:               3       3
+		Initial blocks:              5       5
+		SV Class declarations:       1       1
+		SV Class specializations:    1       1
+		Simulation timescale:      1ns
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+xcelium> source /opt/cadence/XCELIUM2303/tools/xcelium/files/xmsimrc
+xcelium> run
+Random Data ASCII
+write - memory[10011] = 00110101
+read  - memory[10011] = 5
+write - memory[10110] = 01100100
+read  - memory[10110] = d
+write - memory[01110] = 00101111
+read  - memory[01110] = /
+write - memory[10010] = 01101110
+read  - memory[10010] = n
+write - memory[10000] = 01011001
+read  - memory[10000] = Y
+write - memory[01011] = 01101000
+read  - memory[01011] = h
+write - memory[10011] = 01011111
+read  - memory[10011] = _
+write - memory[01011] = 00101000
+read  - memory[01011] = (
+write - memory[10110] = 01100100
+read  - memory[10110] = d
+write - memory[01001] = 01010110
+read  - memory[01001] = V
+write - memory[10100] = 00110001
+read  - memory[10100] = 1
+write - memory[00100] = 01000010
+read  - memory[00100] = B
+write - memory[11010] = 01010001
+read  - memory[11010] = Q
+write - memory[10011] = 01111100
+read  - memory[10011] = |
+write - memory[00110] = 00101100
+read  - memory[00110] = ,
+write - memory[00111] = 01110001
+read  - memory[00111] = q
+write - memory[00100] = 01000001
+read  - memory[00100] = A
+write - memory[01101] = 00110100
+read  - memory[01101] = 4
+write - memory[00101] = 00111001
+read  - memory[00101] = 9
+write - memory[11111] = 01000100
+read  - memory[11111] = D
+write - memory[01011] = 01011011
+read  - memory[01011] = [
+write - memory[01110] = 01001010
+read  - memory[01110] = J
+write - memory[00100] = 01110100
+read  - memory[00100] = t
+write - memory[11111] = 01111001
+read  - memory[11111] = y
+write - memory[10001] = 01110101
+read  - memory[10001] = u
+write - memory[01100] = 01000101
+read  - memory[01100] = E
+write - memory[11011] = 01100110
+read  - memory[11011] = f
+write - memory[10100] = 01100000
+read  - memory[10100] = `
+write - memory[10111] = 01110100
+read  - memory[10111] = t
+write - memory[11111] = 01111001
+read  - memory[11111] = y
+write - memory[11011] = 01110110
+read  - memory[11011] = v
+write - memory[10100] = 00100000
+read  - memory[10100] =  
+Random Data ASCII A-Z
+write - memory[00101] = 01001110
+read  - memory[00101] = N
+write - memory[10010] = 01000111
+read  - memory[10010] = G
+write - memory[10100] = 01010100
+read  - memory[10100] = T
+write - memory[10010] = 01011001
+read  - memory[10010] = Y
+write - memory[11000] = 01001100
+read  - memory[11000] = L
+write - memory[10010] = 01010100
+read  - memory[10010] = T
+write - memory[11001] = 01000111
+read  - memory[11001] = G
+write - memory[10011] = 01011010
+read  - memory[10011] = Z
+write - memory[11000] = 01001011
+read  - memory[11000] = K
+write - memory[00001] = 01011010
+read  - memory[00001] = Z
+write - memory[11100] = 01010111
+read  - memory[11100] = W
+write - memory[11010] = 01001111
+read  - memory[11010] = O
+write - memory[10010] = 01010110
+read  - memory[10010] = V
+write - memory[10000] = 01001111
+read  - memory[10000] = O
+write - memory[01111] = 01010010
+read  - memory[01111] = R
+write - memory[11101] = 01001011
+read  - memory[11101] = K
+write - memory[10011] = 01000111
+read  - memory[10011] = G
+write - memory[10110] = 01010111
+read  - memory[10110] = W
+write - memory[10111] = 01000011
+read  - memory[10111] = C
+write - memory[11101] = 01000101
+read  - memory[11101] = E
+write - memory[10000] = 01010000
+read  - memory[10000] = P
+write - memory[11100] = 01001111
+read  - memory[11100] = O
+write - memory[01011] = 01001010
+read  - memory[01011] = J
+write - memory[11011] = 01000111
+read  - memory[11011] = G
+write - memory[00110] = 01011000
+read  - memory[00110] = X
+write - memory[01001] = 01000111
+read  - memory[01001] = G
+write - memory[10010] = 01000111
+read  - memory[10010] = G
+write - memory[10001] = 01001100
+read  - memory[10001] = L
+write - memory[00011] = 01001101
+read  - memory[00011] = M
+write - memory[01011] = 01010001
+read  - memory[01011] = Q
+write - memory[11100] = 01000001
+read  - memory[11100] = A
+write - memory[00001] = 01011001
+read  - memory[00001] = Y
+Random Data ASCII a-z
+write - memory[11100] = 01100011
+read  - memory[11100] = c
+write - memory[00000] = 01110011
+read  - memory[00000] = s
+write - memory[11101] = 01110111
+read  - memory[11101] = w
+write - memory[11100] = 01110110
+read  - memory[11100] = v
+write - memory[11001] = 01110011
+read  - memory[11001] = s
+write - memory[10010] = 01111010
+read  - memory[10010] = z
+write - memory[10010] = 01101001
+read  - memory[10010] = i
+write - memory[11000] = 01100010
+read  - memory[11000] = b
+write - memory[10011] = 01110001
+read  - memory[10011] = q
+write - memory[10111] = 01111000
+read  - memory[10111] = x
+write - memory[11110] = 01101000
+read  - memory[11110] = h
+write - memory[10111] = 01101100
+read  - memory[10111] = l
+write - memory[10010] = 01101110
+read  - memory[10010] = n
+write - memory[11101] = 01101100
+read  - memory[11101] = l
+write - memory[01100] = 01101001
+read  - memory[01100] = i
+write - memory[10101] = 01101000
+read  - memory[10101] = h
+write - memory[01100] = 01111000
+read  - memory[01100] = x
+write - memory[00000] = 01110100
+read  - memory[00000] = t
+write - memory[00010] = 01110010
+read  - memory[00010] = r
+write - memory[01000] = 01100111
+read  - memory[01000] = g
+write - memory[01011] = 01100101
+read  - memory[01011] = e
+write - memory[01000] = 01100011
+read  - memory[01000] = c
+write - memory[00000] = 01110111
+read  - memory[00000] = w
+write - memory[00111] = 01100001
+read  - memory[00111] = a
+write - memory[10011] = 01110110
+read  - memory[10011] = v
+write - memory[00111] = 01110101
+read  - memory[00111] = u
+write - memory[10101] = 01110011
+read  - memory[10101] = s
+write - memory[11110] = 01100111
+read  - memory[11110] = g
+write - memory[00000] = 01111010
+read  - memory[00000] = z
+write - memory[01000] = 01101110
+read  - memory[01000] = n
+write - memory[01011] = 01101100
+read  - memory[01011] = l
+write - memory[00111] = 01100001
+read  - memory[00111] = a
+Random Data ASCII 80% A-Z / 20% a-z
+write - memory[10101] = 01001000
+read  - memory[10101] = H
+write - memory[01100] = 01000100
+read  - memory[01100] = D
+write - memory[01010] = 01010101
+read  - memory[01010] = U
+write - memory[10100] = 01110000
+read  - memory[10100] = p
+write - memory[01000] = 01001000
+read  - memory[01000] = H
+write - memory[11011] = 01001101
+read  - memory[11011] = M
+write - memory[10101] = 01010111
+read  - memory[10101] = W
+write - memory[01101] = 01001011
+read  - memory[01101] = K
+write - memory[01101] = 01001001
+read  - memory[01101] = I
+write - memory[11001] = 01110011
+read  - memory[11001] = s
+write - memory[00000] = 01001111
+read  - memory[00000] = O
+write - memory[10011] = 01001000
+read  - memory[10011] = H
+write - memory[10110] = 01011010
+read  - memory[10110] = Z
+write - memory[11110] = 01101000
+read  - memory[11110] = h
+write - memory[10110] = 01010110
+read  - memory[10110] = V
+write - memory[01100] = 01110000
+read  - memory[01100] = p
+write - memory[11011] = 01010111
+read  - memory[11011] = W
+write - memory[10111] = 01000010
+read  - memory[10111] = B
+write - memory[11000] = 01010111
+read  - memory[11000] = W
+write - memory[11010] = 01011001
+read  - memory[11010] = Y
+write - memory[01010] = 01001011
+read  - memory[01010] = K
+write - memory[00010] = 01010010
+read  - memory[00010] = R
+write - memory[10101] = 01110011
+read  - memory[10101] = s
+write - memory[00000] = 01010011
+read  - memory[00000] = S
+write - memory[11110] = 01010010
+read  - memory[11110] = R
+write - memory[11010] = 01110110
+read  - memory[11010] = v
+write - memory[11010] = 01000011
+read  - memory[11010] = C
+write - memory[00101] = 01011010
+read  - memory[00101] = Z
+write - memory[11001] = 01010111
+read  - memory[11001] = W
+write - memory[00000] = 01001011
+read  - memory[00000] = K
+write - memory[11010] = 01001111
+read  - memory[11010] = O
+write - memory[11011] = 01001111
+read  - memory[11011] = O
+TEST PASSED
+Simulation complete via $finish(1) at time 5110 NS + 1
+./mem_test.sv:100     $finish;
+xcelium> exit
+TOOL:	xrun	23.03-s005: Exiting on Nov 02, 2024 at 01:00:36 -03  (total: 00:00:00)

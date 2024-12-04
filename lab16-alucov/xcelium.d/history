@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(06Nov2024:19:29:04):( xrun alu.sv alu_test.sv typedefs.sv )
+s2::(06Nov2024:19:34:56):( xrun typedefs.sv )
+s3::(06Nov2024:19:35:30):( xrun typedefs.sv )
+s4::(06Nov2024:19:35:36):( xrun alu.sv alu_test.sv )
+s5::(06Nov2024:19:36:09):( xrun alu.sv alu_test.sv )
+s6::(06Nov2024:19:36:19):( xrun alu.sv alu_test.sv )
+s7::(06Nov2024:19:36:38):( xrun alu.sv alu_test.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc )
+s8::(06Nov2024:19:36:58):( xrun alu.sv alu_test.sv -covdut alu_test -coverage U -covoverwrite -gui -access rwc )

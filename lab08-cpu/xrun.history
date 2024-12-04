@@ -1,0 +1,7 @@
+s1(14Oct2024:09:15:35):  xrun -f filelist.txt -access rwc 
+s2(14Oct2024:09:16:04):  xrun typedefs 
+s3(14Oct2024:09:16:08):  xrun typedefs.sv 
+s4(14Oct2024:09:16:12):  xrun -f filelist.txt -access rwc 
+s5(14Oct2024:09:16:41):  xrun -f filelist.txt -access rwc 
+s6(14Oct2024:09:16:46):  xrun typedefs.sv 
+s7(14Oct2024:09:16:48):  xrun -f filelist.txt -access rwc 

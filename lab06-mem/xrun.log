@@ -1,0 +1,172 @@
+xrun: 23.03-s005: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.03-s005: Started on Oct 11, 2024 at 13:54:13 -03
+xrun
+	mem.sv
+	mem_test.sv
+	top.sv
+Recompiling... reason: file './mem_test.sv' is newer than expected.
+	expected: Fri Oct 11 13:47:18 2024
+	actual:   Fri Oct 11 13:54:09 2024
+file: mem_test.sv
+	module worklib.mem_test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mem_test:sv <0x6c196687>
+			streams:  11, words:  9537
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:              26      26
+		Scalar wires:            4       -
+		Vectored wires:          3       -
+		Always blocks:           3       3
+		Initial blocks:          3       3
+		Pseudo assignments:      1       -
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+xcelium> source /opt/cadence/XCELIUM2303/tools/xcelium/files/xmsimrc
+xcelium> run
+Clear Memory Test
+write - memory[00000] = 00000000
+write - memory[00001] = 00000000
+write - memory[00010] = 00000000
+write - memory[00011] = 00000000
+write - memory[00100] = 00000000
+write - memory[00101] = 00000000
+write - memory[00110] = 00000000
+write - memory[00111] = 00000000
+write - memory[01000] = 00000000
+write - memory[01001] = 00000000
+write - memory[01010] = 00000000
+write - memory[01011] = 00000000
+write - memory[01100] = 00000000
+write - memory[01101] = 00000000
+write - memory[01110] = 00000000
+write - memory[01111] = 00000000
+write - memory[10000] = 00000000
+write - memory[10001] = 00000000
+write - memory[10010] = 00000000
+write - memory[10011] = 00000000
+write - memory[10100] = 00000000
+write - memory[10101] = 00000000
+write - memory[10110] = 00000000
+write - memory[10111] = 00000000
+write - memory[11000] = 00000000
+write - memory[11001] = 00000000
+write - memory[11010] = 00000000
+write - memory[11011] = 00000000
+write - memory[11100] = 00000000
+write - memory[11101] = 00000000
+write - memory[11110] = 00000000
+write - memory[11111] = 00000000
+read - memory[00000] = 00000000
+read - memory[00001] = 00000000
+read - memory[00010] = 00000000
+read - memory[00011] = 00000000
+read - memory[00100] = 00000000
+read - memory[00101] = 00000000
+read - memory[00110] = 00000000
+read - memory[00111] = 00000000
+read - memory[01000] = 00000000
+read - memory[01001] = 00000000
+read - memory[01010] = 00000000
+read - memory[01011] = 00000000
+read - memory[01100] = 00000000
+read - memory[01101] = 00000000
+read - memory[01110] = 00000000
+read - memory[01111] = 00000000
+read - memory[10000] = 00000000
+read - memory[10001] = 00000000
+read - memory[10010] = 00000000
+read - memory[10011] = 00000000
+read - memory[10100] = 00000000
+read - memory[10101] = 00000000
+read - memory[10110] = 00000000
+read - memory[10111] = 00000000
+read - memory[11000] = 00000000
+read - memory[11001] = 00000000
+read - memory[11010] = 00000000
+read - memory[11011] = 00000000
+read - memory[11100] = 00000000
+read - memory[11101] = 00000000
+read - memory[11110] = 00000000
+read - memory[11111] = 00000000
+TEST PASSED
+Data = Address Test
+write - memory[00000] = 00000000
+write - memory[00001] = 00000001
+write - memory[00010] = 00000010
+write - memory[00011] = 00000011
+write - memory[00100] = 00000100
+write - memory[00101] = 00000101
+write - memory[00110] = 00000110
+write - memory[00111] = 00000111
+write - memory[01000] = 00001000
+write - memory[01001] = 00001001
+write - memory[01010] = 00001010
+write - memory[01011] = 00001011
+write - memory[01100] = 00001100
+write - memory[01101] = 00001101
+write - memory[01110] = 00001110
+write - memory[01111] = 00001111
+write - memory[10000] = 00010000
+write - memory[10001] = 00010001
+write - memory[10010] = 00010010
+write - memory[10011] = 00010011
+write - memory[10100] = 00010100
+write - memory[10101] = 00010101
+write - memory[10110] = 00010110
+write - memory[10111] = 00010111
+write - memory[11000] = 00011000
+write - memory[11001] = 00011001
+write - memory[11010] = 00011010
+write - memory[11011] = 00011011
+write - memory[11100] = 00011100
+write - memory[11101] = 00011101
+write - memory[11110] = 00011110
+write - memory[11111] = 00011111
+read - memory[00000] = 00000000
+read - memory[00001] = 00000001
+read - memory[00010] = 00000010
+read - memory[00011] = 00000011
+read - memory[00100] = 00000100
+read - memory[00101] = 00000101
+read - memory[00110] = 00000110
+read - memory[00111] = 00000111
+read - memory[01000] = 00001000
+read - memory[01001] = 00001001
+read - memory[01010] = 00001010
+read - memory[01011] = 00001011
+read - memory[01100] = 00001100
+read - memory[01101] = 00001101
+read - memory[01110] = 00001110
+read - memory[01111] = 00001111
+read - memory[10000] = 00010000
+read - memory[10001] = 00010001
+read - memory[10010] = 00010010
+read - memory[10011] = 00010011
+read - memory[10100] = 00010100
+read - memory[10101] = 00010101
+read - memory[10110] = 00010110
+read - memory[10111] = 00010111
+read - memory[11000] = 00011000
+read - memory[11001] = 00011001
+read - memory[11010] = 00011010
+read - memory[11011] = 00011011
+read - memory[11100] = 00011100
+read - memory[11101] = 00011101
+read - memory[11110] = 00011110
+read - memory[11111] = 00011111
+TEST PASSED
+Simulation complete via $finish(1) at time 2550 NS + 1
+./mem_test.sv:75     $finish;
+xcelium> exit
+TOOL:	xrun	23.03-s005: Exiting on Oct 11, 2024 at 13:54:15 -03  (total: 00:00:02)

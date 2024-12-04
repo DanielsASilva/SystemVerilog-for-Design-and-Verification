@@ -1,0 +1,20 @@
+s1(05Nov2024:18:30:23):  xrun mem_interface.sv 
+s2(05Nov2024:18:30:38):  xrun mem.sv mem_test.sv top.sv 
+s3(05Nov2024:18:31:31):  xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc 
+s4(05Nov2024:22:27:32):  xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc 
+s5(05Nov2024:22:34:28):  xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc 
+s6(05Nov2024:22:36:31):  xrun mem_interface.sv 
+s7(05Nov2024:22:36:33):  xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc 
+s8(05Nov2024:22:42:57):  xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc 
+s9(05Nov2024:22:44:19):  xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc 
+s10(05Nov2024:22:54:36):  xrun mem.sv mem_test.sv top.sv -covdut mem_test.sv -coverage U -covoverwrite -gui -access rwc 
+s11(05Nov2024:22:54:43):  xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc 
+s12(05Nov2024:23:05:10):  xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite 
+s13(05Nov2024:23:05:32):  xrun mem.sv mem_test.sv top.sv -gui -access rwc 
+s14(05Nov2024:23:06:03):  xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc 
+s15(07Nov2024:23:15:13):  xrun mem.sv mem_interface.sv mem_test.sv 
+s16(08Nov2024:00:44:26):  xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc 
+s17(08Nov2024:00:45:10):  xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc 
+s18(08Nov2024:00:45:28):  xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc 
+s19(08Nov2024:00:47:58):  xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc 
+s20(08Nov2024:00:48:46):  xrun mem.sv mem_test.sv top.sv -covdut mem_test -coverage U -covoverwrite -gui -access rwc 

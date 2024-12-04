@@ -1,0 +1,41 @@
+xrun: 23.03-s005: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.03-s005: Started on Nov 18, 2024 at 14:58:51 -03
+xrun
+	event_m_1.sv
+Recompiling... reason: file './event_m_1.sv' is newer than expected.
+	expected: Mon Nov 18 14:56:46 2024
+	actual:   Mon Nov 18 14:58:49 2024
+file: event_m_1.sv
+	module worklib.event_m:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		event_m
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.event_m:sv <0x3feb077f>
+			streams:   7, words:  9753
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 1       1
+		Named events:            2       2
+		Initial blocks:          1       1
+		Parallel blocks:         1       1
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.event_m:sv
+Loading snapshot worklib.event_m:sv .................... Done
+xcelium> source /opt/cadence/XCELIUM2303/tools/xcelium/files/xmsimrc
+xcelium> run
+event_m.WAITER_1  waiting  event e1
+event_m.EMITTER_1 emitting event e1
+event_m.EMITTER_2 emitting event e2
+event_m.WAITER_2  waiting  event e2
+event_m.WAITER_1  received event e1
+event_m.WAITER_2  received event e2
+TEST COMPLETE
+./event_m_1.sv:62       $finish(0);
+xcelium> exit
+TOOL:	xrun	23.03-s005: Exiting on Nov 18, 2024 at 14:58:51 -03  (total: 00:00:00)

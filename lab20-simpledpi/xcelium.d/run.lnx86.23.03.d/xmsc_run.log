@@ -1,0 +1,32 @@
+$CDSROOT = /opt/cadence/XCELIUM2303
+$TESTDIR = /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab20-simpledpi
+
+TOOL:	xmsc	23.03-s005
+xmsc cc parameters: 
+	$CDSROOT/tools/cdsgcc/gcc/9.3/bin/gcc
+	-I$CDSROOT/tools/include
+	-I$CDSROOT/tools/inca/include 
+	-DXMSC
+	-DNCSC
+	-D_GLIBCXX_USE_CXX11_ABI=1 -c
+	-x c -m32  -Wall 
+
+xcelium.d/run.lnx86.23.03.d/xmsc_run/Makefile.xmsc:135: *** missing separator.  Stop.
+xmsc_run: *W,TBPARC: Unable to open file ./xcelium.d/run.lnx86.23.03.d/xmsc_run/xmsc_obj/xmsc_stdlibs_0.log
+xmsc_run: *E,TBBLDF: Failed to generate object ./xcelium.d/run.lnx86.23.03.d/xmsc_run/xmsc_obj/stdlibs_0.o
+$CDSROOT = /opt/cadence/XCELIUM2303
+$TESTDIR = /home/bit/code/cadence courses labs/SystemVerilog for Design and Verification/lab20-simpledpi
+
+TOOL:	xmsc	23.03-s005
+xmsc cc parameters: 
+	$CDSROOT/tools/cdsgcc/gcc/9.3/bin/gcc
+	-I$CDSROOT/tools/include
+	-I$CDSROOT/tools/inca/include 
+	-DXMSC
+	-DNCSC
+	-D_GLIBCXX_USE_CXX11_ABI=1 -c
+	-x c -m32  -Wall 
+
+xcelium.d/run.lnx86.23.03.d/xmsc_run/Makefile.xmsc:135: *** missing separator.  Stop.
+xmsc_run: *W,TBPARC: Unable to open file ./xcelium.d/run.lnx86.23.03.d/xmsc_run/xmsc_obj/xmsc_stdlibs_0.log
+xmsc_run: *E,TBBLDF: Failed to generate object ./xcelium.d/run.lnx86.23.03.d/xmsc_run/xmsc_obj/stdlibs_0.o

@@ -1,0 +1,14 @@
+s1(13Nov2024:18:37:07):  xrun seqtest.sv -gui -access +rwc -linedebug 
+s2(13Nov2024:18:39:14):  xrun seqtest.sv -gui -access +rwc -linedebug 
+s3(13Nov2024:18:39:29):  xrun seqtest.sv -gui -access +rwc -linedebug 
+s4(13Nov2024:18:39:41):  xrun seqtest.sv -gui -access +rwc -linedebug 
+s5(13Nov2024:19:30:34):  xrun seqtest.sv -gui -access +rwc -linedebug 
+s6(13Nov2024:19:31:42):  xrun seqtest.sv -gui -access +rwc -linedebug 
+s7(13Nov2024:19:32:00):  xrun seqtest.sv -gui -access +rwc -linedebug 
+s8(13Nov2024:19:35:22):  xrun seqtest.sv -gui -access +rwc -linedebug 
+s9(13Nov2024:19:36:25):  xrun seqtest.sv -gui -access +rwc -linedebug 
+s10(13Nov2024:19:36:51):  xrun seqtest.sv -gui -access +rwc -linedebug 
+s11(13Nov2024:19:36:59):  xrun seqtest.sv -gui -access +rwc -linedebug 
+s12(13Nov2024:19:37:57):  xrun seqtest.sv -gui -access +rwc -linedebug 
+s13(13Nov2024:20:07:01):  xrun seqtest.sv -gui -access +rwc -linedebug 
+s14(13Nov2024:20:07:22):  xrun seqtest.sv -gui -access +rwc -linedebug 

@@ -1,0 +1,10 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(12Nov2024:21:43:16):( xrun mux.sv mux_test.sv -gui -access +rwc -linedebug )
+s2::(12Nov2024:21:43:36):( xrun mux.sv mux_test.sv -gui -access +rwc -linedebug )
+s3::(12Nov2024:21:45:14):( xrun mux.sv mux_test.sv -gui -access +rwc -linedebug )
+s4::(12Nov2024:21:54:18):( xrun mux.sv mux_test.sv -gui -access +rwc -linedebug )
+s5::(12Nov2024:22:06:25):( xrun mux.sv mux_test.sv -gui -access +rwc -linedebug )
+s6::(12Nov2024:22:27:08):( xrun mux.sv mux_test.sv -gui -access +rwc -linedebug )

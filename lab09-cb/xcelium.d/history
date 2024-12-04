@@ -1,0 +1,17 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(28Oct2024:13:04:19):( xrun flipflop.sv flipflop_test.sv )
+s2::(28Oct2024:13:05:00):( xrun flipflop.sv flipflop_test.sv )
+s3::(28Oct2024:13:05:20):( xrun flipflop.sv flipflop_test.sv )
+s4::(28Oct2024:13:06:21):( xrun flipflop.sv flipflop_test.sv )
+s5::(28Oct2024:13:06:47):( xrun flipflop.sv flipflop_test.sv )
+s6::(28Oct2024:16:23:51):( xrun flipflop.sv flipflop_test.sv )
+s7::(28Oct2024:16:24:45):( xrun flipflop.sv flipflop_test.sv )
+s8::(28Oct2024:16:25:11):( xrun flipflop.sv flipflop_test.sv )
+s9::(28Oct2024:16:25:44):( xrun flipflop.sv flipflop_test.sv )
+s10::(28Oct2024:16:26:00):( xrun flipflop.sv flipflop_test.sv )
+s11::(28Oct2024:16:26:41):( xrun flipflop.sv flipflop_test.sv -access rwc )
+s12::(28Oct2024:16:27:07):( xrun flipflop.sv flipflop_test.sv -gui )
+s13::(28Oct2024:16:27:59):( xrun flipflop.sv flipflop_test.sv -access rwc -gui )
